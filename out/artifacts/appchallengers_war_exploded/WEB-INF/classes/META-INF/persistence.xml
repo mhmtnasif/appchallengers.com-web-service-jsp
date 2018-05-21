@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="AppChallengersPersistenceUnit">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <class>com.appchallengers.appchallengers.model.entity.Users</class>
+        <class>com.appchallengers.appchallengers.model.entity.Country</class>
+        <class>com.appchallengers.appchallengers.model.entity.Relationship</class>
+        <class>com.appchallengers.appchallengers.model.entity.Challenges</class>
+        <class>com.appchallengers.appchallengers.model.entity.ChallengeDetail</class>
+        <class>com.appchallengers.appchallengers.model.entity.Votes</class>
+        <properties>
+
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/appchallengers?useSSL=false&amp;useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"/>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value="++.Appchallengers.com.++"/>
+            <property name="javax.persistence.schema-generation.database.action" value="create"/>
+            <property name="eclipselink.logging.level" value="FINE"/>
+
+
+        </properties>
+    </persistence-unit>
+</persistence>
